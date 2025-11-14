@@ -16,7 +16,7 @@
         }
 
         nav {
-            background-color: #1a1a1a;
+            background-color: #ce0b0b;
         }
 
         .hero-section {
@@ -59,12 +59,18 @@
             padding: 40px 0;
             margin-top: 50px;
         }
+        #mains {
+            z-index: 1;
+        }
+        #skills{
+            background-color: #111;
+        }
     </style>
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark px-4 d-flex position-fixed w-100 " style="background-color: #1a1a1a;">
+    <nav id="mains" class="navbar navbar-expand-lg navbar-dark px-4 d-flex position-fixed w-100 " style="background-color: #414346;">
         <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
@@ -74,8 +80,10 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+               
             </ul>
         </div>
     </nav>
@@ -106,8 +114,32 @@
         <h2 class="fw-bold mb-4">About Me</h2>
         <p class="text-light">I am a dedicated developer with experience in front-end technologies like HTML, CSS, JavaScript and Bootstrap. I love building modern UI designs, responsive layouts, and interactive user experiences.</p>
     </section>
+
+<section id="skills" class="py-5 bg-white" style="background-color: #3b2424;">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-primary">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-3">
+                    <div class="p-4 border rounded bg-info text-white fw-bold shadow-lg">HTML </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-4 border rounded bg-info text-white fw-bold shadow-lg">CSS</div>
+                </div>
+                <div class="col-3">
+                    <div class="p-4 border rounded bg-info text-white fw-bold shadow-lg">JavaScript</div>
+                </div>
+                <div class="col-3">
+                    <div class="p-4 border rounded bg-info text-white fw-bold shadow-lg">Bootstrap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- PROJECTS SECTION -->
-      <section id="projects" class="py-5">
+      <section id="projects" class="py-5" style="background-color: #3b2424;">
         <div class="container text-center">
             <h2 class="fw-bold mb-4 text-primary">My Projects</h2>
             <div class="row g-4">
